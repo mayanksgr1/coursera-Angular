@@ -1,5 +1,18 @@
+<!DOCTYPE html>
 <html>
-    <body>
-        <P1> hello this is Mayank Jain, best developer</P1>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>My first AngularJS App</title>
+  </head>
+  <body ng-app="MyNameCalculate">
+      <h1>My first AngularJS App</h1>
+    <div ng-controller="MyNameCalculateController">
+      <input type="text" 
+        ng-model="name" 
+        ng-keyup="calculateTotalCount();"><br><br>
+      <div>Total count of word is : {{totalCount}}</div>
+    </div>
+  </body>
 </html>
